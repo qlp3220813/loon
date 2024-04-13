@@ -4,7 +4,7 @@
 #!author = RuCu6 fmz200
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/RedPaper.png
-#!date = 2024-04-13 10:57:37
+#!date = 2024-04-13 11:02:37
 
 [Rule]
 AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
@@ -44,4 +44,4 @@ http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/videofee
 http-response https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(imagefeed|live_photo\/save) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/RedPaper/RedPaper_remove_ads.js, requires-body = true, tag = 移除图片和实况照片水印
 
 [Mitm]
-hostname = edith.xiaohongshu.com,www.xiaohongshu.com,pages.xiaohongshu.com,referee.xiaohongshu.com
+hostname = edith.xiaohongshu.com,www.xiaohongshu.com
